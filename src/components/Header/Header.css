@@ -1,0 +1,31 @@
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.header-container img {
+    border-radius: 20px;
+    width: 50%;
+}
+
+.header-head {
+    color: rgb(247, 76, 15);
+}
+
+.header-container a {
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 10px;
+    padding: 10px;
+    color: blue;
+}
+
+.header-container a:hover {
+    background-color: coral;
+    border-radius: 10px;
+    color: white;
+}
