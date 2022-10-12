@@ -11,7 +11,7 @@ const HomeDetails = ({ data, handelToBtn }) => {
             <img src={logo} alt="" />
             <div className='show-data-info'>
                 <div>
-                    <h4 className='text-2xl font-bold'>{name}</h4>
+                    <h4 className='text-1xl font-bold'>{name}</h4>
                 </div>
                 <div>
                     <p className='font-bold'>Total:{total}</p>

@@ -6,7 +6,7 @@ const ShowOption = ({ optionData, optionClick }) => {
     // const { } = opstionData
     return (
         <div>
-            <button onClick={() => optionClick(optionData)} className='quiz-details  text-lg hover:bg-slate-700 p-3 hover:text-white rounded border-'>{optionData}
+            <button onClick={() => optionClick(optionData)} className='quiz-details  text-lg hover:bg-slate-700 p-4 hover:text-white rounded border'>{optionData}
             </button>
             <ToastContainer></ToastContainer>
         </div>
