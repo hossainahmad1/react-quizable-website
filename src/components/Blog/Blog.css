@@ -1,0 +1,12 @@
+.first-ques {
+    margin-top: 60px;
+}
+
+.paragraph-blog {
+    border: 1px solid peru;
+    border-radius: 10px;
+    background-color: gray;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
