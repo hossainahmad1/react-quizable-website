@@ -2,6 +2,7 @@ import React from 'react';
 import ShowOption from '../ShowOption/ShowOption';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Header from '../Header/Header';
 
 const ShowQuiz = ({ data }) => {
     const opstionDatas = data.options
@@ -19,7 +20,7 @@ const ShowQuiz = ({ data }) => {
     }
     return (
         <div className='w-3/5 mx-auto'>
-
+            <Header></Header>
             <p className=' quiz-color  text-2xl py-7 font-bold color'>Quiz : {question}</p>
             {
                 opstionDatas.map(optionData => <ShowOption
