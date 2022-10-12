@@ -19,6 +19,7 @@ const ShowQuiz = ({ data }) => {
     }
     return (
         <div className='w-3/5 mx-auto'>
+
             <p className=' quiz-color  text-2xl py-7 font-bold color'>Quiz : {question}</p>
             {
                 opstionDatas.map(opstionData => <ShowOption
@@ -27,7 +28,6 @@ const ShowQuiz = ({ data }) => {
                     key={opstionData.id}
                 ></ShowOption>)
             }
-            <ToastContainer></ToastContainer>
         </div >
     );
 };
