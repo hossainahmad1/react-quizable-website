@@ -26,7 +26,11 @@ function App() {
           element: <Home></Home>
         },
         { path: '/topic', element: <Topic></Topic> },
-        { path: '/statistic', element: <Statistic></Statistic> },
+        { 
+          path: '/statistic',
+          loader:()=> fetch('https://openapi.programming-hero.com/api/quiz/1'),
+           element: <Statistic></Statistic> 
+          },
         { path: '/blog', element: <Blog></Blog> },
         { path: '/quiz', element: <Quiz></Quiz> },
       ]
