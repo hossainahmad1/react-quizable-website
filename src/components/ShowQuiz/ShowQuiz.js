@@ -9,12 +9,12 @@ const ShowQuiz = ({ data }) => {
 
     const optionClick = (optionData) => {
         if (correctAnswer === optionData) {
-            alert('correct answer')
-            // toast('Correct Answer')
+            // alert('correct answer')
+            toast('Correct Answer')
         }
         else {
-            alert('wrong answer')
-            // toast('Wrong Answer')
+            // alert('wrong answer')
+            toast('Wrong Answer')
         }
     }
     return (
