@@ -9,7 +9,6 @@ const Header = () => {
             </div>
             <div className='anchor'>
                 <Link to='home'>Home</Link>
-                <Link to='topic'>Topic</Link>
                 <Link to='statistic'>Statistic</Link>
                 <Link to='blog'>Blog</Link>
             </div>
