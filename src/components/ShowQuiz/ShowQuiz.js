@@ -9,12 +9,12 @@ const ShowQuiz = ({ data }) => {
 
     const optionClick = (optionData) => {
         if (correctAnswer === optionData) {
-            // alert('correct answer')
-            toast('Correct Answer')
+            alert('correct answer')
+            // toast('Correct Answer')
         }
         else {
-            // alert('wrong answer')
-            toast('Wrong Answer')
+            alert('wrong answer')
+            // toast('Wrong Answer')
         }
     }
     return (
@@ -22,10 +22,10 @@ const ShowQuiz = ({ data }) => {
 
             <p className=' quiz-color  text-2xl py-7 font-bold color'>Quiz : {question}</p>
             {
-                opstionDatas.map(opstionData => <ShowOption
-                    opstionData={opstionData}
-                    opstionClick={optionClick}
-                    key={opstionData.id}
+                opstionDatas.map(optionData => <ShowOption
+                    optionData={optionData}
+                    optionClick={optionClick}
+                    key={optionData.id}
                 ></ShowOption>)
             }
         </div >
