@@ -32,16 +32,17 @@ function App() {
         },
         { path: '/blog', element: <Blog></Blog> },
         { path: '/quiz', element: <Quiz></Quiz> },
+        {
+          path: 'quiz/:quizID',
+          loader: async ({ params }) => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizID}`)
+          },
+          element: <QuizsDetails></QuizsDetails>
+        }
       ]
     },
     { path: '*', element: <NotFound></NotFound> },
-    {
-      path: 'quiz/:quizID',
-      loader: async ({ params }) => {
-        return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizID}`)
-      },
-      element: <QuizsDetails></QuizsDetails>
-    }
+
   ])
   return (
     <div className="App">
